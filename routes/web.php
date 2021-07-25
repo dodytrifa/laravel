@@ -17,7 +17,11 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Mas Joni",
+        "email" => "joni@gmail.com",
+        "image" => "foto.png"
+    ]);
 });
 Route::get('/blog', function () {
     return view('blog');
